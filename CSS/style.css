@@ -1,0 +1,48 @@
+/*TIPOGRAFÍA PARA  BODY*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@400;500;600&family=Spartan:wght@300;400;500&display=swap');
+/*font-family: 'Open Sans', sans-serif;*/
+
+/*TIPOGRAFÍA PARA TITULOS*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Spartan:wght@300;400;500&display=swap');
+/*font-family: 'Bungee', cursive;*/
+
+
+*{
+    font-family:sans-serif
+}
+
+body{
+    color: cornsilk;
+    background-color: rgb(69, 136, 108);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/*CABECERAS*/
+h1{
+    color: rgb(194, 129, 255);
+    font-family: 'Bungee', cursive;
+    font-size: 4rem;
+    margin: 0%;
+    
+}
+h3{
+    color: rgb(237, 217, 255);
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    margin: 0%;
+}
+.subtitulo{
+    color: rgb(237, 217, 255);
+    font-family: 'Bungee', cursive;
+    font-size: 3rem;
+    margin: 0%;
+}
+/*MAIN*/
+.image__binca{
+    border-radius: 1rem;
+    width: 60%;
+}
+/*ARTICLE*/
+.introducción{
+display: ;
+}

@@ -1,0 +1,127 @@
+/*tipografía header*/
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');/*font-family: 'Bungee', cursive;*/
+/*font-family: 'Baloo Bhai 2', cursive;*/
+
+
+/*TIPOGRAFÍA RESTO*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+/*font-family: 'Rubik', sans-serif;*/
+
+* *::before, *::after{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 0;
+}
+
+body{
+    padding: 4%;
+
+    font-family: 'Rubik', sans-serif ;
+    
+}
+/*section*/
+.contact{
+    padding-bottom: 3rem;
+    /*padding-top: 0;*/
+    
+}
+.title{
+    font-family:'Baloo Bhai 2', cursive; 
+    font-size: 3rem;
+    line-height: 2.7rem;
+    margin-bottom: 2.5rem;
+    /*margin-top: 0;*/
+}
+
+.text_gmail{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.gmail_link{
+    display: block;
+    font-family:'Rubik', sans-serif ;
+    color:#35CC61 ;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+
+}
+.social_media{
+    font-size: 1.3rem;
+    font-family:'Rubik', sans-serif ;
+    font-weight: bold;
+    color: #292929;
+    padding-bottom: .4rem;
+}
+
+/*footer*/
+form{
+    background-color: #EBFAEF;
+    padding: 5%;
+}
+h2{
+    font-size: 1.6rem;
+    font-family:'Baloo Bhai 2', cursive;
+    color: #33475B;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border-radius: 0.3rem;
+    border-color: rgb(255, 255, 255);
+    border-width: 0.02rem;
+}
+.vh{
+    position: absolute;
+    top: -10000em;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+li{
+    list-style-type: none;
+}
+button{
+    background-color: #35CC61;
+    display: block;
+    border-radius: .2rem;
+    width: 100%;
+    padding: 15px 30px;
+    margin-top: 0.5rem;
+    color: white;
+    font-family:'Baloo Bhai 2', cursive; 
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+}
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 3rem;
+    margin-bottom: 0.6em;
+}
+.message{
+    height: 9rem;
+}
+
+@media all and (min-width:600px) and (max-width:2000px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .contact{
+        max-width: 512px;
+    }
+    form{
+        max-width: 512px;
+    }
+}

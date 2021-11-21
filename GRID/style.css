@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    color: white;
+}
+
+
+/*grid*/
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .grid__cell-100{
+        flex: 0 0 100%;
+        background-color: blue;
+    }
+
+    .grid__cell-50{
+        flex: 0 0 50%;
+        background-color: blueviolet;
+    }
+
+[class^="grid__cell"]{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 8px;        
+
+}
+
+@media screen and (max-width:600px){
+
+    .grid{
+        display: flex;
+        flex-direction: row;
+    }
+
+        .grid__cell-100{
+            flex: 100%;
+            background-color: blue;
+            
+        }
+        
+        .grid__cell-50{
+            flex: 100%;
+            background-color: blueviolet;
+            
+        }
+    
+    [class^="grid__cell"]{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}
+

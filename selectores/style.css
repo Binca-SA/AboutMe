@@ -1,0 +1,83 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(234, 234, 255);
+}
+/*ENLACES*/
+.link-mozilla{
+    color: chartreuse;
+}
+
+.link-trello{
+    color: coral;
+}
+a:visited{
+    color: rgb(3, 160, 160);
+}
+.link-trello:visited{
+    color: darkmagenta;
+}
+.link-trello:focus{
+    border-radius: 8.5px;
+    border: dotted  rgb(218, 68, 68);
+}
+
+/*INPUTS*/
+.input-text{
+    box-shadow: 0 0 5px 5px rgba(107, 107, 255, 0.527);
+}
+
+.input-check-tel-email{
+    box-shadow: 0 0 5px 5px rgba(255, 107, 223, 0.527);;
+}
+
+p{
+    color: brown;
+}
+span{
+    color: chartreuse;
+}
+span.amarillo-span{
+    color: darkgoldenrod;
+}
+.parrafo{
+    color: darkmagenta;
+}
+.parrafo .amarillo-span{
+    color: darkturquoise;
+}
+#span{
+    color: gold;
+}
+
+/*p{
+    display: none;
+}
+input{
+    display: none;
+}
+input:checked~p{
+    display: block;
+}*/
+
+/*input[type="text"]{}*/
+
+/*PSEUDO SELECTORES
+:link
+a:visited
+:hover
+:active
+:focus
+input:focus 
+.checked
+:first-child - primer hijo de la lista
+:nth-child(n)- n es el num q queramos si entre parentesis ponemos (n+3) selecciona el q quieras mas los tres siguientes
+PSEUDO ELEMENTOS
+:after despues del elemento
+:before antes del elemento 
+
+ESPECIFIDAD
+    element selectorr - p h1 
+    class selec
