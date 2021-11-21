@@ -1,0 +1,179 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Open+Sans&display=swap');
+
+/*Specify families
+    'Chakra Petch', sans-serif;
+    'Open Sans', sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: blue;*/
+    /*background: radial-gradient(rgb(255, 120, 110),rgb(148, 148, 255),rgb(255, 255, 136));*/
+    /*ackground-color: rgb(0, 0, 0);*/    
+}
+
+
+/*MAIN*/
+.main{
+    background: rgba(255, 249, 192, 0.295) ;
+    border-radius: 1rem;
+    display: flex;
+    width: 25rem;
+
+}
+.main:before{
+    background: inherit;
+    content:"";
+    position: absolute;
+    box-shadow: inset 0 0 2000px rgba(194, 153, 153, 0.288);
+    /*filter: blur(10);*/
+
+}
+
+
+
+/*ANIMACIONES CIRCULOS*/
+.circulo__coral{
+    border-radius:50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: rgba(255, 127, 80, 0.671);
+    position: absolute;
+    bottom: 9.4rem;
+    left: 24rem;
+    animation-name: animacionCírculoCORAL;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacionCírculoCORAL {
+    from{
+        left: 0;
+        bottom: 25rem;
+        top:20.625rem;
+    }
+    to{
+        left: 59%;
+        bottom: 25rem;
+        top: 20.625rem;
+        
+    }
+}
+/*ANIMACIÓN PARA MOVILE CÍRCULO CORAL*/
+@media all and (max-width: 25rem) {
+    
+    @keyframes animacionCírculoCORAL {
+        from{
+            left: 0%;
+            top:58%;   
+        }
+        to{
+            left: 60%;
+            top: 58%;
+            
+        }
+    }
+}
+.circulo__azul{
+    border-radius:50%;
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    bottom: 19rem;
+    left: 45rem;
+    background: rgba(129, 127, 255, 0.685);
+    animation-name: animacionCírculoAzul;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes animacionCírculoAzul {
+    from{
+        left:65%;
+        top:0rem; 
+    }
+    to{
+        left:65% ;
+        top: 60%;
+        
+    }
+}
+/*ANIMACIÓN PARA MOVILE CIRCULO AZUL*/
+@media all and (max-width: 25rem) {
+    
+        @keyframes animacionCírculoAzul {
+            from{
+                left:67%;
+                top:0rem;   
+            }
+            to{
+                left:67%;
+                top: 60%;
+                
+            }
+        }
+    }
+
+/*CONTENIDO*/
+.contenido{
+    background-color: rgba(255, 255, 255, 0.288);
+    border: 5px white;
+    width: 25rem;
+    /*min-height: 20rem;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;  
+  }
+
+  @media all and (max-width: 25rem) {
+    .body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        display: flex;
+        width: 17rem;
+        margin: 0 auto;
+    }
+    .contenido{
+        display:flex;
+        width: 17rem;
+    }
+}
+
+.name{
+    font-family: 'Chakra Petch', sans-serif;
+    padding: .8rem;
+    padding-bottom: 0%;
+    margin: 0;
+    color: rgb(5, 5, 46);
+}
+
+/*ARTICLE*/
+
+.description__paco{
+    padding: .87rem;
+    padding-top: 0%;
+    margin-top: 0;
+    color: rgb(5, 5, 46);
+}
+
