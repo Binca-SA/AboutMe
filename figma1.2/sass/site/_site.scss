@@ -1,0 +1,11 @@
+/*CARACTERÍSTICAS GENERALES SITE*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    @include general-body;
+}
+

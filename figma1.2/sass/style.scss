@@ -1,0 +1,12 @@
+@import "libreria/variables";
+@import "libreria/mixins";
+
+@import "components/buttons";
+@import "components/header";
+@import "components/avatar-header";
+@import "components/navigation";
+
+@import "site/site";
+
+//importación de la tipografía//
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');

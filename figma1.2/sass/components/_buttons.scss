@@ -1,0 +1,12 @@
+/*BOTONOES EN MAIN*/
+.buttons-navigation{
+    display: flex;
+    justify-content: space-between;
+    
+}  
+    button{
+        font-family:$tipografia-body;
+        border-radius: 30px;
+        border: none;
+        margin: 1em;
+    }

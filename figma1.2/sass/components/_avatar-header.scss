@@ -1,0 +1,30 @@
+/*IMAGEN DE PERFIL*/
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border: solid 5px white;
+    border-radius: 50%;
+    background-image:url(../images/1636538605927.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    text-align: center;
+    margin: 0 auto -1.2em;
+
+    
+}
+    /*LÁPIZ CON CÍRCULO EN LA FOTO DE PERFIL*/
+    .avatar-container{
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        margin: 0 auto;
+        @include flex-justifycontent;
+        align-items: center;
+    
+        .profile-image-edit__svg{
+            width: 20px;
+            height: 20px;
+        }
+    }

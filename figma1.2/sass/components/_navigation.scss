@@ -1,0 +1,35 @@
+/*NAVIGATION*/
+nav{
+    @include flex-justifycontent;
+}
+    ul{
+        @include flex-justifycontent;
+        flex-direction: row;
+        /*align-items: center;*/
+        width: 460px; 
+        flex-wrap: wrap;
+        margin-top:.5em;
+    }
+        li{
+            @include flex-center;
+            flex-direction:column-reverse;
+            align-items: center;
+            align-content: center;
+            margin-top: $margins;
+            margin-right: $margins;
+            width: 100px;
+            height: 100px;
+            border-radius: 1em;
+            /*gap: 20px;*/
+            background-color: $background-nav;
+            flex-wrap: wrap;
+    
+        }
+            .svg__navigation{
+                width: $margins;
+                height: $margins;
+            }
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}

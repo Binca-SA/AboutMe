@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/*BOTONOES EN MAIN*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+.buttons-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 30px;
+  border: none;
+  margin: 1em;
+}
+
+/*HEADER*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*TÍTULO Y SUBTÍTULO*/
+h1, h5 {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+/*IMAGEN DE PERFIL*/
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border: solid 5px white;
+  border-radius: 50%;
+  background-image: url(../images/1636538605927.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin: 0 auto -1.2em;
+}
+
+/*LÁPIZ CON CÍRCULO EN LA FOTO DE PERFIL*/
+.avatar-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.avatar-container .profile-image-edit__svg {
+  width: 20px;
+  height: 20px;
+}
+
+/*NAVIGATION*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*align-items: center;*/
+  width: 460px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 0.5em;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 1em;
+  /*gap: 20px;*/
+  background-color: #B6F6D0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.svg__navigation {
+  width: 30px;
+  height: 30px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+/*caracteristicas generales SITE*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ADAFEE;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
