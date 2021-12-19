@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor-rosa{
+    background-color:#C4C4C4;
+    border-radius: 44px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+}
+.contenedor-rosa:hover{
+    background-color: #FFD0D2;
+    box-shadow:5px 5px 15px 5px #FFD0D2;
+}
+
+/*estilos al corzon*/
+svg{
+    width: 100px;
+    position: absolute;
+    z-index: 6;
+}
+path:hover{
+    fill: #FF4A55;
+}
+/*estilos al circulo*/
+.circle{
+    
+    width: 300px;
+    height: 300px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #FB7079;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+/*estilos al numerito*/
+.number{
+    width: 104px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #FF4A55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    visibility: hidden;
+    position: absolute;
+    z-index: 4;
+
+}    
+/*lugar de la animacion*/
+.corazon:active {
+    animation: like 1.5s ease-in-out;  
+}
+.contenedor-rosa:focus  ~ .number{
+    animation: numercito 1.5s ease-in;
+}
+.contenedor-rosa:focus ~ .circle{
+    animation: circulo 1.5s ease-in;
+}
+
+@keyframes like {
+    0%{
+        width:160px;
+    }
+}
+
+@keyframes numercito {
+    from{
+        visibility: visible;
+        /*top: 50px;*/
+        top:50vh;
+    }
+    to{
+        visibility: visible;
+        /*top: -78px;*/
+        top: 15vh;
+    }
+}
+
+@keyframes circulo{
+    from{
+        width: 80px;
+        height: 80px;
+        opacity: 100%;
+    }
+}
